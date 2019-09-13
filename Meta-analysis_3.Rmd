@@ -544,7 +544,11 @@ Notice hakn=True and method.tau
 ---
 ## Exercise.
 
-ADD EXERCISE. Pygmalion data.
+Depending on where we are at, we'll work on [this exercise](https://tvpollet.github.io/Meta-analysis_3/Exercise_3_questions.html) or the previous one.
+
+```{r, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/3qQ329Rgle89i/giphy.gif") # from giphy.com
+```
 
 ---
 ## Forest plots.
@@ -579,7 +583,7 @@ At the bottom of the figure, both fixed-effect and random-effects means are plot
 ---
 ## Example forest plot
 
-```{r, fig.width=10,fig.height=7.5, dev='svg'}
+```{r, fig.width=10,fig.height=7.3, dev='svg'}
 forest(model_hksj)
 ```
 
@@ -624,6 +628,10 @@ forest(model_hksj,
 )
 dev.off
 ```
+
+???
+note redundancy of N, Mean, etc as metagen rather than metacont!
+
 ---
 ## Modified forest plot
 
@@ -849,8 +857,6 @@ Generally, when we assess and report heterogeneity in a meta-analysis, we need a
 
 * ** $I^2$ ** on the other hand, is not sensitive to changes in the number of studies in the analyses. $I^2$ is therefore used extensively in medical and psychological research. 
 
---
-
 ---
 ## A note on  $\large{I^2}$
 
@@ -890,7 +896,7 @@ Again note that we are assuming here that there is no selection bias and that th
 
 - Effect size independence
 
-```{r, out.width = "500px", echo=FALSE, fig.align='center'}
+```{r, out.width = "350px", echo=FALSE, fig.align='center'}
 knitr::include_graphics("https://media.giphy.com/media/l0Hlxr9SGCcw4wHS0/giphy.gif")
 ```
 
@@ -965,6 +971,13 @@ We'll cover an alternative route for handling dependencies as well, when we cove
 
 ---
 ## Exercise.
+
+Please see the exercise posted [here](https://tvpollet.github.io/Meta-analysis_3/Exercise_3_questions.html)
+
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/oShObTfbg3S5G/giphy.gif") # from giphy.com
+```
 
 ---
 ## Any Questions?

@@ -1,0 +1,24 @@
+---
+title: "Exercise Session 3"
+author: "Dr. Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk)"
+date: '`r format(Sys.Date())` | [disclaimer](https://tvpollet.github.io/disclaimer)'
+output:
+  html_document
+---
+
+## Questions.
+
+
+The data for this question are standardized mean differences from a meta-analysis of 49 experimental effects of teacher expectancy on pupil IQ (Raudenbush, 1984). They are part of the `metafor`package and you can find out more about them in the help file in the metafor package. 
+
+The typical study in this dataset administered a pre-test to a sample of students. Subsequently, the teachers were told that a randomly selected subsample were 'bloomers' (students with substantial potential intellectual growth). All of the students were then administered a post-test and it was expected that the ones identified as bloomers would show a significantly higher increment in IQ growth than the control group (i.e., students not identified as bloomers). You might have heard of the [Pygmalion effect](https://www.duq.edu/about/centers-and-institutes/center-for-teaching-excellence/teaching-and-learning/pygmalion), (see [here](https://en.wikipedia.org/wiki/Pygmalion_in_the_Classroom))
+
+Inspect the data and note that it has _yi_= standardized mean difference and _vi_= corresponding sampling variance. 
+
+* Conduct a fixed-effects meta-analysis. Note that you'll need to calculate the standard error.
+* Conduct a random-effects model with the **DerSimonian-Laird** method.
+* Conduct a random-effects model with the **Hartung-Knapp-Sidik-Jonkman** method.
+* Conduct a random-effects model with **Restricted Maximum Likelihood (REML)** estimation, look at the `meta` package, if you don't know how to.
+* Make a 'nice' forest plot for one of your models. (**Bonus**: see if you manage to combine author and year on your forest plot).
+
+
