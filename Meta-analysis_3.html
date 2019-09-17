@@ -13,7 +13,7 @@ class: center, middle, inverse, title-slide
 
 # Meta-analysis course: part 3: Fixed vs. random effect meta-analyses
 ### Thomas Pollet (<span class="citation">@tvpollet</span>), Northumbria University
-### 2019-09-13 | <a href="http://tvpollet.github.io/disclaimer">disclaimer</a>
+### 2019-09-16 | <a href="http://tvpollet.github.io/disclaimer">disclaimer</a>
 
 ---
 
@@ -75,9 +75,13 @@ class: center, middle, inverse, title-slide
 ## Modeling study outcomes III
 
 * Let `\(T_1...T_K\)` be estimates of (the observed) effect sizes (e.g, _d_, or Pearson _r_) from _K_ independent studies, where each `\(T_i\)` is an estimate of the 'true' effect size ( `\(\theta_i\)`).
+
 --
+
 * Thus, we will have one effect size ( _Ti_ ) for each study and these effect sizes are considered to be statistically independent (!).
+
 --
+
 * Our goal is to model the study outcome across those studies (estimate the means of `\(\theta_i\)` = `\(\mu\)` ).
 
 ???
@@ -102,7 +106,7 @@ The circles represent `\(\theta_i\)` i.e. `\(\theta_1\)` , `\(\theta_2\)` &amp; 
 
 Our observed effect is the square ( `\(T_3\)` ). `\(\epsilon_3\)` is _within_ study error, `\(\zeta_3\)` refers to true variation.
 
-&lt;img src="between-within_variation.png" width="600px" style="display: block; margin: auto;" /&gt;
+&lt;img src="study_3.png" width="600px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Modeling study outcomes VII (Borenstein et al. 2009:72)
@@ -289,8 +293,7 @@ larger studies are downweighted and smaller studies are upweighted.
 
 --
 
-Remember under a random effects model the goal is not to estimate one 'true' effect ($\theta$), but to estimate the mean of a distribution of effects. As each study provides information about a different effect size, we want to be sure that all these effect sizes are represented in our summary estimate. Therefore, we cannot discount a small study by giving it a very small weight (as in a fixed-effect meta-analysis)
-a fixed-effect analysis).
+Remember under a random effects model the goal is not to estimate one 'true' effect ( `\(\theta\)` ), but to estimate the mean of a distribution of effects. As each study provides information about a different effect size, we want to be sure that all these effect sizes are represented in our summary estimate. Therefore, we cannot discount a small study by giving it a very small weight (as in a fixed-effect meta-analysis).
 
 --
 
@@ -497,7 +500,7 @@ In the results of our Meta-Analysis, we find:
 Similar code to what we had for fixed effects but we have to specify our estimators for `\(\tau^2\)`
 
 ---
-## Estimators of `\(\tau^2\)`
+## Estimators of `\(\large\tau^2\)`
 
 &lt;table&gt;
  &lt;thead&gt;
@@ -810,7 +813,7 @@ note redundancy of N, Mean, etc as metagen rather than metacont!
 ---
 ## Modified forest plot
 
-&lt;img src="Meta-analysis_3_files/figure-html/unnamed-chunk-23-1.svg" width="500px" /&gt;
+&lt;img src="Meta-analysis_3_files/figure-html/unnamed-chunk-23-1.svg" width="500px" style="display: block; margin: auto;" /&gt;
 ---
 ## Layout types 
 
@@ -1069,7 +1072,7 @@ Again note that we are assuming here that there is no selection bias and that th
   – Examine results with and without the study
   – Weigh the large N study by the median sample size of the other studies, rather than its own sample size
 
-&lt;img src="https://media.giphy.com/media/uaOqWaZpebl8k/giphy.gif" width="400px" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://media.giphy.com/media/uaOqWaZpebl8k/giphy.gif" width="300px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## 'Negative Residual variance.'
@@ -1145,7 +1148,8 @@ Twitter: @tvpollet
 
 * My colleagues who helped me with regards to meta-analysis Nexhmedin Morina, Stijn Peperkoorn, Gert Stulp, Mirre Simons, Johannes Honekopp.
 
-* HBES for funding this. Those who have funded me (not these studies per se): [NWO](www.nwo.nl), [Templeton](www.templeton.org), [NIAS](http://nias.knaw.nl).
+* [HBES](www.hbes.com) and [LECH](https://www.lechufrn.com/) for funding this workshop. Those who have funded me (not these studies per se): [NWO](www.nwo.nl), [Templeton](www.templeton.org), [NIAS](http://nias.knaw.nl).
+
 
 * You for listening!
 
